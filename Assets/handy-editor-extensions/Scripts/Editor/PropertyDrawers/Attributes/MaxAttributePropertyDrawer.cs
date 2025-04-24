@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace HandyEditorExtensions
+namespace HandyEditorExtensions.Editor
 {
     [CustomPropertyDrawer(typeof(MaxAttribute))]
     public class MaxAttributePropertyDrawer : PropertyDrawer
