@@ -148,11 +148,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31f5fabc1e0dcb2428e5cc11fa2421ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  health2: 250
+  health100: 100
+  healthByMaxHealth: 100
   maxHealth: 250
-  damage: 50
-  damageMultiplier: 0.5
+  readOnlyStringField: read only string field
+  readOnlyVector3Field: {x: 1, y: 2, z: 3}
+  showIf: 1
+  hideIf: 1
+  visibleInt: 1
+  unvisibleInt: 2
+  visibleIntByShowIf: 3
+  visibleIntByHideIf: 4
 --- !u!4 &465734967
 Transform:
   m_ObjectHideFlags: 0

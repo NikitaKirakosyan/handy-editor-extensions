@@ -4,7 +4,7 @@ using UnityEngine;
 namespace HandyEditorExtensions.Editor
 {
     [CustomPropertyDrawer(typeof(MaxAttribute))]
-    public class MaxAttributePropertyDrawer : PropertyDrawer
+    public class MaxAttributePropertyDrawer : NameAndValuePropertyDrawerBase
     {
         private const string InvalidTypeMessage = "Use Max with numeric type like float, int or double and etc.";
 
@@ -19,13 +19,13 @@ namespace HandyEditorExtensions.Editor
                 return;
 
             if(!string.IsNullOrEmpty(MaxAttribute.maxValuePropertyName) && !string.IsNullOrWhiteSpace(MaxAttribute.maxValuePropertyName))
-                DrawMaxAttributeOnPropertyNameBased(position, property, label);
+                DrawAttributeOnPropertyNameBased(position, property, label);
             else
-                DrawMaxAttributeOnValueBased(position, property, label);
+                DrawAttributeOnValueBased(position, property, label);
         }
 
 
-        private void DrawMaxAttributeOnPropertyNameBased(Rect position, SerializedProperty property, GUIContent label)
+        protected override void DrawAttributeOnPropertyNameBased(Rect position, SerializedProperty property, GUIContent label)
         {
             var maxValueSerializedProperty = property.serializedObject.FindProperty(MaxAttribute.maxValuePropertyName);
 
@@ -39,7 +39,7 @@ namespace HandyEditorExtensions.Editor
             Draw(position, property, label, maxValue, (int)maxValue);
         }
 
-        private void DrawMaxAttributeOnValueBased(Rect position, SerializedProperty property, GUIContent label)
+        protected override void DrawAttributeOnValueBased(Rect position, SerializedProperty property, GUIContent label)
         {
             Draw(position, property, label, MaxAttribute.max, (int)MaxAttribute.max);
         }
