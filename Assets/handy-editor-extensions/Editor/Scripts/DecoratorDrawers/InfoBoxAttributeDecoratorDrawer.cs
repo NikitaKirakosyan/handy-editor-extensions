@@ -4,7 +4,7 @@ using UnityEngine;
 namespace HandyEditorExtensions.Editor
 {
     [CustomPropertyDrawer(typeof(InfoBoxAttribute))]
-    public class InfoBoxAttributePropertyDrawer : DecoratorDrawer
+    public class InfoBoxAttributeDecoratorDrawer : DecoratorDrawer
     {
         public override void OnGUI(Rect pos)
         {
