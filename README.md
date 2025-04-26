@@ -2,7 +2,7 @@
 ![Unity](https://img.shields.io/badge/unity-6000.0%2B-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-A collection of custom attributes and editor drawers that supercharge the Unity Inspector—add buttons, conditional visibility, readonly fields, value limits, dropdowns, color-coded thresholds, serializable dictionaries, and more, with zero boilerplate.
+A collection of custom attributes and editor drawers that supercharge the Unity Inspector—add buttons, conditional visibility, readonly fields, value limits, dropdowns, color-coded thresholds.
 
 ## Manual
 Copy the Assets/HandyEditorExtensions folder into your project.
