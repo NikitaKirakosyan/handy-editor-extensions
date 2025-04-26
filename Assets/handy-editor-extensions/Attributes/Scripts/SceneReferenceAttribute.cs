@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace HandyEditorExtensions
 {
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true, AllowMultiple = false)]
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true, AllowMultiple = true)]
     public class SceneReferenceAttribute : PropertyAttribute
     {
         
