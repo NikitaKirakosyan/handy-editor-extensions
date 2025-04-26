@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 
-namespace HandyEditorExtensions
+namespace HandyEditorExtensions.Editor
 {
     [CustomPropertyDrawer(typeof(ProgressBarAttribute))]
     public class ProgressBarAttributePropertyDrawer : PropertyDrawer
