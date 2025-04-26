@@ -9,7 +9,7 @@ Copy the Assets/HandyEditorExtensions folder into your project.
 
 ## ✨ Features
 ### Buttons
-* `[Button(string label = null)]`
+* `[Button(string)]`
 
 _Draws an Inspector button that invokes parameterless methods._
 
@@ -19,10 +19,12 @@ _Draws an Inspector button that invokes parameterless methods._
 
 
 ### Conditional Visibility
-* `[ShowIf(bool|string condition)]`
-* `[HideIf(bool|string condition)]`
+* `[ShowIf(bool|string)]`
+* `[HideIf(bool|string)]`
 
 _Show or hide fields, properties, or methods based on a condition or another field’s value._
+
+![gif](https://github.com/user-attachments/assets/5ec09ace-08eb-4bfd-93bd-635d44bfb232)
 
 ![image](https://github.com/user-attachments/assets/6345fda8-0af0-43ab-a110-888108f1516a)
 
@@ -32,19 +34,23 @@ _Show or hide fields, properties, or methods based on a condition or another fie
 
 _Marks a field as read-only in the Inspector._
 
+![image](https://github.com/user-attachments/assets/d805ae41-103a-4901-aacf-37509f8ac7cb)
+
 ![image](https://github.com/user-attachments/assets/4862c4be-672f-487e-b27e-1acd1ace9aa1)
 
 
 ### Limits
-* `[Max(float max | string maxField)]`
+* `[Max(float|string)]`
 
 _Enforces an upper value limit (constant or driven by another field)._
+
+![gif](https://github.com/user-attachments/assets/acd455cb-763d-45b3-baed-7c2737daa59f)
 
 ![image](https://github.com/user-attachments/assets/275fd580-9aa7-439c-8240-7635ac91d2ca)
 
 
 ### Dropdowns & Enums
-* `[Dropdown(Type enumType)]`
+* `[Dropdown(Type)]`
 
 _Renders a strongly-typed enum dropdown._
 
@@ -54,7 +60,7 @@ _Renders a strongly-typed enum dropdown._
 
 
 ### Color-Coded Thresholds
-* `[MultiThresholdColor(float[] thresholds, string[] colorHexes, ThresholdColorMode mode)]`
+* `[MultiThresholdColor(float[], string[], ThresholdColorMode)]`
 
 _Change label or background color based on value thresholds (supports unlimited breakpoints)._
 
@@ -62,11 +68,46 @@ _Change label or background color based on value thresholds (supports unlimited 
 
 ![image](https://github.com/user-attachments/assets/d5577e9b-c428-4956-8f32-180f73f44336)
 
-## 🔜 Future Opportunities (will be added)
-* MinMaxSlider
-* InfoBox
-* SceneReference
-* And more...
+### Progress Bar
+* `[ProgressBar(string, string)]`
+
+_Shows a progress bar below the field, taking the current and maximum values ​​from the component fields._
+
+![gif](https://github.com/user-attachments/assets/2c49347d-e6e6-4e93-8b85-17ff5a073d29)
+
+![image](https://github.com/user-attachments/assets/defe15ab-47b5-436b-bc20-b20d872e6fe5)
+
+### Info Box
+* `[InfoBox(string, MessageType)]`
+
+_Inserts help/info above the field._
+
+![image](https://github.com/user-attachments/assets/065b1185-d42e-4357-9cfa-e650e56741e5)
+
+![image](https://github.com/user-attachments/assets/f7a0f326-1d05-480a-b2a3-af2a3dd0b84d)
+
+### TagDropdown & LayerDropdown
+* `[TagDropdown]`
+* `[LayerDropdown]`
+
+_Drop-down lists with project tags and layers._
+
+![gif](https://github.com/user-attachments/assets/cbbab1fc-51a2-4669-b674-be4ad6772627)
+
+![gif](https://github.com/user-attachments/assets/28dd7077-ba13-4af4-bd3b-2c85e1d3528c)
+
+![image](https://github.com/user-attachments/assets/a3b68b4c-7157-44b8-b93e-3216621ae879)
+
+![image](https://github.com/user-attachments/assets/5297aae9-a02b-4969-8080-f56de763cc46)
+
+### SceneReference
+* `[SceneReference]`
+
+_Stores the path to the scene in the string field, but draws the SceneAsset object field._
+
+![image](https://github.com/user-attachments/assets/15329a9c-9d1b-49f2-9840-24a850e4c463)
+
+![image](https://github.com/user-attachments/assets/9c80ce47-acb9-44f7-a59d-dc59a9c9ef36)
 
 ## 🧪 Demos
 ### See the Demo folder for working examples:
