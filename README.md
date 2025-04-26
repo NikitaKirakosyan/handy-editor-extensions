@@ -62,7 +62,11 @@ _Change label or background color based on value thresholds (supports unlimited 
 
 ![image](https://github.com/user-attachments/assets/d5577e9b-c428-4956-8f32-180f73f44336)
 
-
+## 🔜 Future Opportunities (will be added)
+* MinMaxSlider
+* InfoBox
+* SceneReference
+* And more...
 
 ## 🧪 Demos
 ### See the Demo folder for working examples:
