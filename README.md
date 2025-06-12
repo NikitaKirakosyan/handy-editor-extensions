@@ -5,7 +5,7 @@
 A collection of custom attributes and editor drawers that supercharge the Unity Inspector—add buttons, conditional visibility, readonly fields, value limits, dropdowns, color-coded thresholds.
 
 ## Installation options
-1) Copy the Assets/debug-pro folder into your project.
+1) Copy the Assets/handy-editor-extensions folder into your project.
 2) Download and import `.unitypackage` from [release](https://github.com/NikitaKirakosyan/handy-editor-extensions/releases/latest) into your project.
 
 ## ✨ Features
