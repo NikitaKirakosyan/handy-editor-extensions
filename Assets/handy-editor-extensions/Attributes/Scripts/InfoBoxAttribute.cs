@@ -1,4 +1,3 @@
-using UnityEditor;
 using UnityEngine;
 
 namespace HandyEditorExtensions
@@ -6,13 +5,13 @@ namespace HandyEditorExtensions
     public class InfoBoxAttribute : PropertyAttribute
     {
         public readonly string message;
-        public readonly MessageType messageType;
+        public readonly InfoBoxType infoBoxType;
 
 
-        public InfoBoxAttribute(string message, MessageType messageType = MessageType.Info)
+        public InfoBoxAttribute(string message, InfoBoxType infoBoxType = InfoBoxType.Info)
         {
             this.message = message;
-            this.messageType = messageType;
+            this.infoBoxType = infoBoxType;
         }
     }
 }
